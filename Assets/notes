@@ -1,0 +1,12 @@
+Use day.js or moment.js for date and time functionality
+
+BOOTSTRAP: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+
+FONTAWESOME: https://use.fontawesome.com/releases/v5.8.1/css/all.css
+    https://fontawesome.com/icons 
+
+GOOGLE FONTS: https://fonts.googleapis.com/css?family=Open+Sans&display=swap
+
+JQUERY: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+
+MOMENT.JS: https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js
