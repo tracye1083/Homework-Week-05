@@ -6,47 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./Develop/style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Work Day Planner</title>
 </head>
 
 <body>
     <header class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Work Day Scheduler</h1>
+            <h1 class="display-3">Work Day Planner</h1>
             <div class="wrapper">
                 <div class="divider div-transparent"></div>
             </div>
-            <p class="lead">A simple calendar app for scheduling your work day</p>
+            <p class="lead">A simple calendar app for planning out your work day</p>
             <p id="currentDay" class="lead"></p>
         </div>
     </header>
 
 
     <div class="container text-right planner">
-        <!-- Timeblocks go here -->
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">9AM</p>
+                <p class="border-bottom" id="time-block">9AM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="9AM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="9">
+                <textarea id="9AM" class=" form-control custom-control textborder" rows="2" name="9">
                 </textarea>
-                <button class="col-1 btn">
-                    <i class="far fa-save"></i>
-                </button>
             </div>
+            <button class="col-1 btn"><span>
+                    <i class="far fa-save"></i>
+                </span></button>
         </div>
+
 
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">10AM</p>
+                <p class="border-bottom" id="time-block">10AM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="10AM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="10">
+                <textarea id="10AM" class=" form-control textborder" rows="2" style="resize: none;" name="10">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -55,10 +56,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">11AM</p>
+                <p class="border-bottom" id="time-block">11AM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="11AM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="11">
+                <textarea id="11AM" class=" form-control textborder" rows="2" style="resize: none;" name="11">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -67,10 +68,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">12PM</p>
+                <p class="border-bottom" id="time-block">12PM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="12PM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="12">
+                <textarea id="12PM" class=" form-control textborder" rows="2" style="resize: none;" name="12">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -79,10 +80,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">1PM</p>
+                <p class="border-bottom" id="time-block">1PM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="1PM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="13">
+                <textarea id="1PM" class=" form-control textborder" rows="2" style="resize: none;" name="13">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -91,10 +92,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">2PM</p>
+                <p class="border-bottom" id="time-block">2PM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="2PM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="14">
+                <textarea id="2PM" class=" form-control textborder" rows="2" style="resize: none;" name="14">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -103,10 +104,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">3PM</p>
+                <p class="border-bottom" id="time-block">3PM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="3PM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="15">
+                <textarea id="3PM" class=" form-control textborder" rows="2" style="resize: none;" name="15">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -115,10 +116,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">4PM</p>
+                <p class="border-bottom" id="time-block">4PM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="4PM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="16">
+                <textarea id="4PM" class=" form-control textborder" rows="2" style="resize: none;" name="16">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
@@ -127,10 +128,10 @@
         </div>
         <div class="row">
             <div class="col-1 input-group input-container">
-                <p class="border-bottom">5PM</p>
+                <p class="border-bottom" id="time-block">5PM</p>
             </div>
             <div class="col-10 input-group form-group">
-                <textarea id="5PM" class="custom-control form-control textboarder" rows="2" style="resize: none;" name="17">
+                <textarea id="5PM" class=" form-control textborder" rows="2" style="resize: none;" name="17">
                 </textarea>
                 <button class="col-1 btn">
                     <i class="far fa-save"></i>
