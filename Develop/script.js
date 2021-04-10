@@ -1,6 +1,7 @@
 let timeDisplayEl = $("#currentDay");
 
 let now = parseInt(moment().format("HH"));
+console.log(now);
 
 let $9AM = $("#9AM");
 let $10AM = $("#10AM");
@@ -21,15 +22,15 @@ function displayTime() {
 $("textarea").each(function() {
     var name = parseInt($(this).attr("name"));
     if (name < now) {
-        $(this).addClass("bg-gray");
+        $(this).addClass("bg-past");
     }
 
     if (name > now) {
-        $(this).addClass("bg-green")
+        $(this).addClass("bg-future")
     }
 
     if (name === now) {
-        $(this).addClass("bg-red")
+        $(this).addClass("bg-now")
     }
 });
 

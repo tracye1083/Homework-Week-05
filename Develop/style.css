@@ -4,6 +4,30 @@ body {
     line-height: 1;
 }
 
+
+/* * Style for Divider */
+
+.wrapper {
+    padding-bottom: 50px;
+}
+
+.divider {
+    position: relative;
+    margin-top: 50px;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(72, 8, 175), transparent);
+}
+
 textarea {
     background: transparent;
     border: none;
@@ -68,4 +92,19 @@ textarea {
 .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+}
+
+.bg-now {
+    background-color: #cfdce9da;
+    color: rgb(83, 11, 124);
+}
+
+.bg-future {
+    background-color: #c697fc;
+    color: rgb(83, 11, 124);
+}
+
+.bg-past {
+    background-color: rgba(83, 11, 124, 0.753);
+    color: #ebecec;
 }
