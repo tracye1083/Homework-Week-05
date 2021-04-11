@@ -45,13 +45,12 @@ textarea {
     border-bottom: 10px solid rgb(47, 4, 117);
 }
 
-
-/* .description {
-    white-space: pre-wrap;
-} */
+p {
+    text-align: center;
+    margin-top: 15px;
+}
 
 .time-block {
-    text-align: center;
     border-radius: 5px;
 }
 
@@ -61,13 +60,7 @@ textarea {
     border-top: 1px solid white;
 }
 
-.hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-}
-
-.plannerDiv {
+.planner {
     border-radius: 25px;
     box-shadow: 2px black;
 }
@@ -108,20 +101,13 @@ textarea {
     border-radius: 5px;
 }
 
-.saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
+textarea p {
+    -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+    box-shadow: inset 2px 2px 2px 0px #dddddd;
 }
 
-.saveBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-*/ .btn {
+.btn {
     font-family: 'Raleway', sans-serif;
     border: none;
     background-color: rgb(83, 11, 124);
@@ -130,7 +116,7 @@ textarea {
     color: hsl(0, 0%, 100%);
     display: inline-block;
     font-size: 1.25rem;
-    line-height: 22px;
+    line-height: 20px;
     margin: 8px 8px 8px 10px;
     padding: 7px 17px;
     text-align: center;
