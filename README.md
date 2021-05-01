@@ -10,7 +10,7 @@ Site Created using:
 **SCREENSHOT**
 ![Day Planner](Assets/planner.png)
 ***
-[Work Day Planner](https://tracye1083.github.io/Homework-Week-05/)
+[Work Day Planner](https://tracye1083.github.io/Work-Day-Planner/)
 ***
 **CONTACT INFORMATION**
 
